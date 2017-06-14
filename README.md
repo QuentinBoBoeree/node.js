@@ -30,5 +30,11 @@ invoker.excute(method, [arg1,arg2,arg3], function (err, data) {
     console.log(data)
 });
 ```
-
 使用node命令启动该js脚本，在commandline报错，截图如下：
+![错误](https://github.com/QuentinBoBoeree/node.js/blob/master/dubbo.png)  
+
+那么，采用程序员惯例的解决问题的方法，将错误粘入搜索框，一般情况下，stackoverflow上都会有相关的错误提示，但是这次并没有找到比较相似的错误。那么该怎么办呢。
+
+这种情况，只能查看源码了。找到了node_modules下的zoodubbo package，关键源码index.js。
+找到如下代码段：
+![zoodubbo.img](https://github.com/QuentinBoBoeree/node.js/blob/master/zoodubbo.png)
